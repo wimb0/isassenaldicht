@@ -53,7 +53,7 @@
             const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-            document.getElementById('countdown').innerHTML = `${days} dagen ${hours} uur ${minutes} minuten ${seconds} seconden`;
+            document.getElementById('countdown').innerHTML = `Nog ${days} dagen ${hours} uur ${minutes} minuten ${seconds} seconden`;
 
             if (timeDifference < 0) {
                 clearInterval(interval);
